@@ -13,7 +13,7 @@
   ],
   "author": "Vlada",
   "license": "MIT",
-  "browserslist": [
-    "last 4 versions"
-  ]
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
 }
