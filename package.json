@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Construction company portfolio website. Used: HTML, SCSS, JS.",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "html",
+    "sass",
+    "js"
+  ],
+  "author": "Vlada",
+  "license": "MIT",
+  "browserslist": [
+    "last 4 versions"
+  ]
+}

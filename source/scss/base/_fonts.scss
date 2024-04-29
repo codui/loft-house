@@ -1,0 +1,11 @@
+// Specify the path to the font file relative to the main file "main.css"
+
+@include fontFace(playfair-display, 700, PlayfairDisplayBold);
+
+@include fontFace(post-no-bills-jaffna, 400, PostNoBillsJaffna-SemiBold);
+
+@include fontFace(raleway, 400, Raleway-Regular);
+
+@include fontFace(raleway, 700, Raleway-Bold);
+
+@include fontFace(roboto, 300, Roboto-Light);

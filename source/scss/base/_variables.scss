@@ -1,0 +1,33 @@
+// The name of the folder with fonts, which is in the public or source folder
+$folderWithAllFonts: 'fonts';
+
+:root {
+    // ! Variables for CSS, but without calculations !
+    // * You can use the CSS function calc(). But very carefully.
+    --def-font-size: 16px; // Default font size
+    
+    --white-color: #fff;
+    --lightGr1: #ededed;    
+    --myGrey: #424242;
+    --darkText: #252525;
+    
+    --accentPink: #e43071;
+    --pinkHover: #be285e;
+    --subAc: #ffc1d8;
+    --pinkSubtitle: #ffdae7;
+    --pinkDisabled: #d37899;
+}
+
+
+// Variables for calculations in SCSS
+$root-font-size: 16; // Base font size
+
+$content-width: 1100; // Content width
+
+$btn-main-width: 255; // Width of main buttons
+
+$btn-main-pad-tb: 12; // Top/bottom padding
+$btn-main-pad-lr: 10; // Left/Right padding
+
+$btn-main-line-height: 27; // Row height for buttons
+$btn-main-f-size: 16; // Font size of main buttons

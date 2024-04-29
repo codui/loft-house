@@ -1,0 +1,82 @@
+:root {
+  --def-font-size: 16px;
+  --white-color: #fff;
+  --lightGr1: #ededed;
+  --myGrey: #424242;
+  --darkText: #252525;
+  --accentPink: #e43071;
+  --pinkHover: #be285e;
+  --subAc: #ffc1d8;
+  --pinkSubtitle: #ffdae7;
+  --pinkDisabled: #d37899;
+}
+
+@font-face {
+  font-family: playfair-display;
+  src: url("../fonts/playfair-display/PlayfairDisplayBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: post-no-bills-jaffna;
+  src: url("../fonts/post-no-bills-jaffna/PostNoBillsJaffna-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/raleway/Raleway-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/raleway/Raleway-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+.header {
+  color: red;
+}
+
+.playfairDisplay {
+  font-family: playfair-display, sans-serif;
+  font-weight: 700;
+}
+
+.postNoBillsJaffna {
+  font-family: post-no-bills-jaffna, sans-serif;
+  font-weight: 400;
+}
+
+.ralewayRegular {
+  font-family: raleway, sans-serif;
+  font-weight: 400;
+}
+
+.ralewayBold {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+}
+
+.robotoLight {
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+}
+
+.btn {
+  width: 100%;
+  max-width: 15.9375rem;
+  display: inline-block;
+  padding: 0.75rem 0.625rem;
+  line-height: 1.6875rem;
+  font-size: 1rem;
+  font-family: playfair-display, sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */

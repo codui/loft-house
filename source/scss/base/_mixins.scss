@@ -1,0 +1,33 @@
+// * Mixin for connecting fonts to the site
+// $folderWithAllFonts - name of the folder with fonts, which is in the public or source folder
+// $fontFam - font family folder name
+// $name-file - font file name
+
+@mixin fontFace($fontFam, $weight, $name-file) {
+    @font-face {
+        font-family: $fontFam;
+        // Specify the path to the font file relative to the main file "main.css"
+        src:
+            url('../' + $folderWithAllFonts + '/' + $fontFam + '/' + $name-file + '.woff2')
+            format('woff2');
+        font-style: normal;
+        font-weight: $weight;
+    }
+}
+
+// Mixin for inserting a font in code
+@mixin famWeight($family: Arial, $weight: 400, $ser: sans-serif) {
+    font-family: $family, $ser;
+    font-weight: $weight;
+}
+
+// Mixin for creating a button
+@mixin button-main() {
+    width: 100%;
+    max-width: rems($btn-main-width);
+    display: inline-block;
+    padding: rems($btn-main-pad-tb) rems($btn-main-pad-lr);
+    line-height: rems($btn-main-line-height);
+    font-size: rems($btn-main-f-size);
+    @include famWeight(playfair-display, 700);
+}

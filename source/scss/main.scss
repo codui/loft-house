@@ -1,0 +1,23 @@
+// In a project, you need to fill out everything one by one - from top to bottom.
+// ! You cannot change the order of inserting links to scss files located in the base folder. !
+
+@use "sass:math";
+
+
+// In the variables file, you need to set (without specifying units of measurement) 
+// the dimensions of the content part of the page in $content-width.
+// The main dimensions of the site elements will be calculated from this number.
+@import "./base/variables";
+
+// Functions for calculating units of measurement
+@import "./base/functions";
+
+// All calculations of element sizes are made here.
+@import "./base/mixins";
+
+// Font connection file
+@import "./base/fonts";
+
+
+// Blocks and site elements
+@import "./blocks/header";
