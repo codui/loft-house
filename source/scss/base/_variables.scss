@@ -31,3 +31,22 @@ $btn-main-pad-lr: 10; // Left/Right padding
 
 $btn-main-line-height: 27; // Row height for buttons
 $btn-main-f-size: 16; // Font size of main buttons
+
+
+// Icomoon fonts variables
+$icomoon-font-path: "fonts/icomoon" !default;
+$icomoon-font-family-br: "icomoon-bronze" !default;
+$icomoon-font-family-wh: "icomoon-white" !default;
+
+$icon-bench: unquote('"\\e900"');
+$icon-bicycle: unquote('"\\e901"');
+$icon-building: unquote('"\\e902"');
+$icon-fountain: unquote('"\\e903"');
+$icon-mouse: unquote('"\\e904"');
+
+$icon-facebook: unquote('"\\e900"');
+$icon-instagram: unquote('"\\e901"');
+$icon-phone: unquote('"\\e902"');
+$icon-label: unquote('"\\e903"');
+$icon-vk: unquote('"\\e904"');
+$icon-youtube: unquote('"\\e905"');

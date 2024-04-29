@@ -8,7 +8,7 @@
         font-family: $fontFam;
         // Specify the path to the font file relative to the main file "main.css"
         src:
-            url('../' + $folderWithAllFonts + '/' + $fontFam + '/' + $name-file + '.woff2')
+            url('../#{$folderWithAllFonts}/#{$fontFam}/#{$name-file}.woff2')
             format('woff2');
         font-style: normal;
         font-weight: $weight;

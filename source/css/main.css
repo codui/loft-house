@@ -41,6 +41,100 @@
   font-style: normal;
   font-weight: 300;
 }
+@font-face {
+  font-family: "icomoon-bronze";
+  src: url("../fonts/icomoon/icomoon-bronze.eot?wgeulr");
+  src: url("../fonts/icomoon/icomoon-bronze.eot?wgeulr#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon-bronze.ttf?wgeulr") format("truetype"), url("../fonts/icomoon/icomoon-bronze.woff?wgeulr") format("woff"), url("../fonts/icomoon/icomoon-bronze.svg?wgeulr#icomoon-bronze") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "icomoon-white";
+  src: url("../fonts/icomoon/icomoon-white.eot?wgeulr");
+  src: url("../fonts/icomoon/icomoon-white.eot?wgeulr#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon-white.ttf?wgeulr") format("truetype"), url("../fonts/icomoon/icomoon-white.woff?wgeulr") format("woff"), url("../fonts/icomoon/icomoon-white.svg?wgeulr#icomoon-white") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=_icon-]::before,
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.color-br {
+  font-family: "icomoon-bronze" !important;
+}
+
+.color-wh {
+  font-family: "icomoon-white" !important;
+}
+
+._icon-bench:before {
+  content: "\e900";
+  color: #d4c17f;
+  font-size: 50px;
+}
+
+._icon-bicycle:before {
+  content: "\e901";
+  color: #d4c17f;
+}
+
+._icon-building:before {
+  content: "\e902";
+  color: #d4c17f;
+}
+
+._icon-fountain:before {
+  content: "\e903";
+  color: #d4c17f;
+}
+
+._icon-mouse:before {
+  content: "\e904";
+  color: #d4c17f;
+}
+
+._icon-facebook:before {
+  content: "\e900";
+  color: #fff;
+}
+
+._icon-instagram:before {
+  content: "\e901";
+  color: #fff;
+}
+
+._icon-phone:before {
+  content: "\e902";
+  color: #fff;
+}
+
+._icon-label:before {
+  content: "\e903";
+  color: #fff;
+}
+
+._icon-vk:before {
+  content: "\e904";
+  color: #fff;
+}
+
+._icon-youtube:before {
+  content: "\e905";
+  color: #fff;
+}
+
 .header {
   color: red;
 }
