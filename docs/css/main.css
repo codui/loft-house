@@ -129,31 +129,31 @@ sup {
 
 @font-face {
   font-family: Playfair-display;
-  src: url("../fonts/Playfair-display/PlayfairDisplayBold.woff2") format("woff2");
+  src: url("./../fonts/Playfair-display/PlayfairDisplayBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: Post-no-bills-jaffna;
-  src: url("../fonts/Post-no-bills-jaffna/PostNoBillsJaffna-SemiBold.woff2") format("woff2");
+  src: url("./../fonts/Post-no-bills-jaffna/PostNoBillsJaffna-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: Raleway;
-  src: url("../fonts/Raleway/Raleway-Regular.woff2") format("woff2");
+  src: url("./../fonts/Raleway/Raleway-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: Raleway;
-  src: url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2");
+  src: url("./../fonts/Raleway/Raleway-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2");
+  src: url("./../fonts/Roboto/Roboto-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
