@@ -213,7 +213,7 @@ sup {
 
 ._icon-mouse::before {
   content: "\e906";
-  color: inherit;
+  color: #d4c17f;
 }
 
 ._icon-phone::before {
@@ -333,6 +333,29 @@ a:hover {
   font-size: 3rem;
   color: #d4c17f;
   text-align: center;
+}
+
+.title {
+  min-height: 16.375rem;
+  padding-top: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+._icon-mouse {
+  font-size: 2.5rem;
+}
+
+._icon-mouse:hover::before {
+  color: #ffffff;
 }
 
 nav {
