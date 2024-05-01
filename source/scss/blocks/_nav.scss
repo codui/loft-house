@@ -1,0 +1,9 @@
+nav {
+    font-size: rems(14);
+}
+
+.nav__list {
+    display: flex;
+    column-gap: rems(40);
+    letter-spacing: rems(1);
+}

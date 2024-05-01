@@ -1,5 +1,12 @@
 .header {
     min-height: rems(840);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: rems(30);
+    padding-bottom: rems(74);
+
     background: linear-gradient(
         180deg,
         $dark 11.98%,
@@ -9,6 +16,20 @@
     url('./../images/header/header-bg.jpg');
 }
 
-.btn {
-    @include button-main();
+.header__top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: rems(10);
 }
+
+.header__nav {
+    margin-right: rems(40);
+}
+
+// .header__title h1 {
+//     @include fontFam(Playfair-display, 700);
+//     font-size: rems(48);
+//     color: $accent;
+//     text-align: center;
+// }

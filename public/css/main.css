@@ -261,7 +261,7 @@ body {
   font-weight: 400;
   background-color: #242b33;
   color: #ffffff;
-  font-size: 16;
+  font-size: 1rem;
 }
 
 a {
@@ -273,19 +273,90 @@ a:hover {
   transition: color 0.2s ease-in;
 }
 
-.header {
-  min-height: 52.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(36, 43, 51, 0.3)), color-stop(92.19%, #242b33)), url("./../images/header/header-bg.jpg");
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(36, 43, 51, 0.3) 51.04%, #242b33 92.19%), url("./../images/header/header-bg.jpg");
+.container {
+  width: 71.25rem;
+  max-width: 100%;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
+
+.logo__link {
+  font-family: Post-no-bills-jaffna, sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.4;
+}
+
+.logo__subtitle {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 .btn {
   width: 100%;
   max-width: 15.9375rem;
   display: inline-block;
-  padding: 0.75rem 0.625rem;
+  padding: 0.625rem 0.9375rem;
   line-height: 1.6875rem;
   font-size: 1rem;
   font-family: Playfair-display, sans-serif;
   font-weight: 700;
+}
+
+.header {
+  min-height: 52.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.875rem;
+  padding-bottom: 4.625rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(36, 43, 51, 0.3)), color-stop(92.19%, #242b33)), url("./../images/header/header-bg.jpg");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(36, 43, 51, 0.3) 51.04%, #242b33 92.19%), url("./../images/header/header-bg.jpg");
+}
+
+.header__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0.625rem;
+}
+
+.header__nav {
+  margin-right: 2.5rem;
+}
+
+nav {
+  font-size: 0.875rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.5rem;
+     -moz-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  letter-spacing: 0.0625rem;
 }/*# sourceMappingURL=main.css.map */

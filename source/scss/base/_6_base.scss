@@ -2,7 +2,7 @@ body {
     @include fontFam($font-main, 400, sans-serif);
     background-color: $dark;
     color: $white;
-    font-size: $root-font-size; // 16px
+    font-size: rems($root-font-size); // 16px
 }
 
 a {
@@ -12,4 +12,30 @@ a {
         color: $accent;
         transition: color 0.2s ease-in;
     }
+}
+
+.container {
+    width: rems($content-width + ($pad-lr * 2)); // Ширина контента с учетом border-box
+    max-width: 100%;
+    padding: 0 rems($pad-lr);
+    margin: 0 auto;
+    
+}
+
+.logo__link {
+    @include fontFam(Post-no-bills-jaffna, 400);
+    font-size: rems(36);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+}
+
+.logo__subtitle {
+    @include fontFam(Raleway, 400);
+    font-size: rems(12);
+    text-transform: uppercase;
+}
+
+.btn {
+    @include button-main();
 }

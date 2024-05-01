@@ -18,11 +18,14 @@ $grey-text2: #bebebe;
 
 $root-font-size: 16; // Base font size
 
-$content-width: 1100; // Content width
+$content-width: 1110; // Content width
+$pad-tb: 10;
+$pad-lr: 15;
+
 
 $btn-main-width: 255; // Width of main buttons
-$btn-main-pad-tb: 12; // Top/bottom padding
-$btn-main-pad-lr: 10; // Left/Right padding
+$btn-main-pad-tb: 10; // Top/bottom padding
+$btn-main-pad-lr: 15; // Left/Right padding
 $btn-main-line-height: 27; // Row height for buttons
 $btn-main-f-size: 16; // Font size of main buttons
 
