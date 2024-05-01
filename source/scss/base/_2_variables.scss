@@ -6,19 +6,13 @@ $font-main: Raleway;
 $font-accent: Playfair-display;
 $font-secondary: Roboto;
 
-:root {
-    // ! Variables for CSS, but without calculations !
-    // * You can use the CSS function calc(). But very carefully.
-    --def-font-size: 16px; // Default font size
-    
-    // Variable COLORS in CSS format
-    --dark: #242B33;
-    --footer-bg: #2D343C;
-    --accent: #D4C17F;
-    --white: #FFFFFF;
-    --grey-text1: #E7E7E7;
-    --grey-text2: #BEBEBE;
-}
+// Variable COLORS in CSS format
+$dark: #242b33;
+$footer-bg: #2d343c;
+$accent: #d4c17f;
+$white: #ffffff;
+$grey-text1: #e7e7e7;
+$grey-text2: #bebebe;
 
 // Variables for calculations in SCSS
 
@@ -32,11 +26,10 @@ $btn-main-pad-lr: 10; // Left/Right padding
 $btn-main-line-height: 27; // Row height for buttons
 $btn-main-f-size: 16; // Font size of main buttons
 
-
 // Icomoon fonts variables
-$icomoon-font-path: "fonts/icomoon" !default;
-$icomoon-font-family-br: "icomoon-bronze" !default;
-$icomoon-font-family-wh: "icomoon-white" !default;
+$icomoon-font-path: 'fonts/icomoon' !default;
+$icomoon-font-family-br: 'icomoon-bronze' !default;
+$icomoon-font-family-wh: 'icomoon-white' !default;
 
 // Bronze color
 $icon-bench: unquote('"\\e900"');

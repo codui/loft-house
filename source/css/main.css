@@ -45,7 +45,6 @@ textarea {
   font-family: inherit;
   font-size: 1rem;
   color: inherit;
-  background-color: transparent;
 }
 
 input::-webkit-input-placeholder {
@@ -127,16 +126,6 @@ h6 {
 
 sup {
   color: inherit;
-}
-
-:root {
-  --def-font-size: 16px;
-  --dark: #242B33;
-  --footer-bg: #2D343C;
-  --accent: #D4C17F;
-  --white: #FFFFFF;
-  --grey-text1: #E7E7E7;
-  --grey-text2: #BEBEBE;
 }
 
 @font-face {
@@ -270,22 +259,24 @@ sup {
 body {
   font-family: Raleway, sans-serif;
   font-weight: 400;
-  background-color: var(--dark);
-  color: var(--white);
-  font-size: var(--def-font-size);
+  background-color: #242b33;
+  color: #ffffff;
+  font-size: 16;
 }
 
 a {
-  color: var(--white);
+  color: #ffffff;
 }
 a:hover {
-  color: var(--accent);
+  color: #d4c17f;
   -webkit-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
 }
 
 .header {
   min-height: 52.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(36, 43, 51, 0.3)), color-stop(92.19%, #242b33)), url("./../images/header/header-bg.jpg");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(36, 43, 51, 0.3) 51.04%, #242b33 92.19%), url("./../images/header/header-bg.jpg");
 }
 
 .btn {

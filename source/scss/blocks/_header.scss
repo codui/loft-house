@@ -1,7 +1,13 @@
 .header {
     min-height: rems(840);
+    background: linear-gradient(
+        180deg,
+        $dark 11.98%,
+        rgba($dark, 0.3) 51.04%,
+        #242b33 92.19%
+    ),
+    url('./../images/header/header-bg.jpg');
 }
-
 
 .btn {
     @include button-main();
