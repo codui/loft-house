@@ -1,14 +1,33 @@
 // Specify the path to the font file relative to the main file "main.css"
 
-@include fontFace(playfair-display, 700, PlayfairDisplayBold);
+@include fontFace(Playfair-display, 700, PlayfairDisplayBold);
 
-@include fontFace(post-no-bills-jaffna, 400, PostNoBillsJaffna-SemiBold);
+@include fontFace(Post-no-bills-jaffna, 400, PostNoBillsJaffna-SemiBold);
 
-@include fontFace(raleway, 400, Raleway-Regular);
+@include fontFace(Raleway, 400, Raleway-Regular);
 
-@include fontFace(raleway, 700, Raleway-Bold);
+@include fontFace(Raleway, 700, Raleway-Bold);
 
-@include fontFace(roboto, 300, Roboto-Light);
+@include fontFace(Roboto, 300, Roboto-Light);
+
+
+// An example of how to connect fonts
+
+// .playfairDisplay {
+//     @include fontFam(playfair-display, 700);
+// }
+// .postNoBillsJaffna {
+//     @include fontFam(post-no-bills-jaffna, 400);
+// }
+// .ralewayRegular {
+//     @include fontFam(raleway, 400);
+// }
+// .ralewayBold {
+//     @include fontFam(raleway, 700);
+// }
+// .robotoLight {
+//     @include fontFam(roboto, 300);
+// }
 
 // Icomoon icon font
 @font-face {

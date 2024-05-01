@@ -1,43 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:focus, *:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
+html.lock {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  font-size: inherit;
+}
+
+input::-moz-placeholder {
+  font-size: inherit;
+}
+
+input:-ms-input-placeholder {
+  font-size: inherit;
+}
+
+input::-ms-input-placeholder {
+  font-size: inherit;
+}
+
+input::placeholder {
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+a:focus, a:active {
+  outline: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+sup {
+  color: inherit;
+}
+
 :root {
   --def-font-size: 16px;
-  --white-color: #fff;
-  --lightGr1: #ededed;
-  --myGrey: #424242;
-  --darkText: #252525;
-  --accentPink: #e43071;
-  --pinkHover: #be285e;
-  --subAc: #ffc1d8;
-  --pinkSubtitle: #ffdae7;
-  --pinkDisabled: #d37899;
+  --dark: #242B33;
+  --footer-bg: #2D343C;
+  --accent: #D4C17F;
+  --white: #FFFFFF;
+  --grey-text1: #E7E7E7;
+  --grey-text2: #BEBEBE;
 }
 
 @font-face {
-  font-family: playfair-display;
-  src: url("../fonts/playfair-display/PlayfairDisplayBold.woff2") format("woff2");
+  font-family: Playfair-display;
+  src: url("../fonts/Playfair-display/PlayfairDisplayBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: post-no-bills-jaffna;
-  src: url("../fonts/post-no-bills-jaffna/PostNoBillsJaffna-SemiBold.woff2") format("woff2");
+  font-family: Post-no-bills-jaffna;
+  src: url("../fonts/Post-no-bills-jaffna/PostNoBillsJaffna-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: raleway;
-  src: url("../fonts/raleway/Raleway-Regular.woff2") format("woff2");
+  font-family: Raleway;
+  src: url("../fonts/Raleway/Raleway-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: raleway;
-  src: url("../fonts/raleway/Raleway-Bold.woff2") format("woff2");
+  font-family: Raleway;
+  src: url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: roboto;
-  src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2");
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
@@ -139,33 +279,25 @@
   background-color: green;
 }
 
+body {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: var(--def-font-size);
+}
+
+a {
+  color: var(--white);
+}
+a:hover {
+  color: var(--accent);
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
 .header {
-  color: red;
-}
-
-.playfairDisplay {
-  font-family: playfair-display, sans-serif;
-  font-weight: 700;
-}
-
-.postNoBillsJaffna {
-  font-family: post-no-bills-jaffna, sans-serif;
-  font-weight: 400;
-}
-
-.ralewayRegular {
-  font-family: raleway, sans-serif;
-  font-weight: 400;
-}
-
-.ralewayBold {
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-}
-
-.robotoLight {
-  font-family: roboto, sans-serif;
-  font-weight: 300;
+  min-height: 52.5rem;
 }
 
 .btn {
@@ -175,6 +307,6 @@
   padding: 0.75rem 0.625rem;
   line-height: 1.6875rem;
   font-size: 1rem;
-  font-family: playfair-display, sans-serif;
+  font-family: Playfair-display, sans-serif;
   font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

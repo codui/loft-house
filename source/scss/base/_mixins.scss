@@ -16,7 +16,7 @@
 }
 
 // Mixin for inserting a font in code
-@mixin famWeight($family: Arial, $weight: 400, $ser: sans-serif) {
+@mixin fontFam($family: Raleway, $weight: 400, $ser: sans-serif) {
     font-family: $family, $ser;
     font-weight: $weight;
 }
@@ -29,5 +29,5 @@
     padding: rems($btn-main-pad-tb) rems($btn-main-pad-lr);
     line-height: rems($btn-main-line-height);
     font-size: rems($btn-main-f-size);
-    @include famWeight(playfair-display, 700);
+    @include fontFam(Playfair-display, 700);
 }

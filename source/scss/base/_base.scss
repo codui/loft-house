@@ -1,0 +1,15 @@
+body {
+    @include fontFam($font-main, 400, sans-serif);
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: var(--def-font-size); // 16px
+}
+
+a {
+    color: var(--white);
+
+    &:hover {
+        color: var(--accent);
+        transition: color 0.2s ease-in;
+    }
+}

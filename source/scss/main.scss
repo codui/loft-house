@@ -3,7 +3,7 @@
 
 @use "sass:math";
 
-
+@import "./base/reset";
 // In the variables file, you need to set (without specifying units of measurement) 
 // the dimensions of the content part of the page in $content-width.
 // The main dimensions of the site elements will be calculated from this number.
@@ -21,5 +21,5 @@
 @import "./base/base";
 
 
-// Blocks and site elements
+// Blocks
 @import "./blocks/header";

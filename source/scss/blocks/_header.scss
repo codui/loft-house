@@ -1,31 +1,8 @@
 .header {
-    color: red;
+    min-height: rems(840);
 }
 
-// DELETE THIS STYLES -- START
-
-.playfairDisplay {
-    @include famWeight(playfair-display, 700);
-}
-.postNoBillsJaffna {
-    @include famWeight(post-no-bills-jaffna, 400);
-}
-.ralewayRegular {
-    @include famWeight(raleway, 400);
-}
-.ralewayBold {
-    @include famWeight(raleway, 700);
-}
-.robotoLight {
-    @include famWeight(roboto, 300);
-}
-
-
-// DELETE THIS STYLES -- END
 
 .btn {
     @include button-main();
 }
-
-
-
