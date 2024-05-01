@@ -93,7 +93,11 @@
 
 ._icon-mouse::before {
     content: $_icon-mouse;
-    color: #fff;
+    color: inherit;
+    // color: #fff;
+    // &:hover {
+    //     color: $accent;
+    // }
 }
 
 ._icon-phone::before {

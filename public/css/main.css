@@ -213,7 +213,7 @@ sup {
 
 ._icon-mouse::before {
   content: "\e906";
-  color: #fff;
+  color: inherit;
 }
 
 ._icon-phone::before {
