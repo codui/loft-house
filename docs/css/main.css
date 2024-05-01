@@ -159,14 +159,6 @@ sup {
   font-weight: 300;
 }
 @font-face {
-  font-family: "icomoon-bronze";
-  src: url("../fonts/icomoon/icomoon-bronze.eot?wgeulr");
-  src: url("../fonts/icomoon/icomoon-bronze.eot?wgeulr#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon-bronze.ttf?wgeulr") format("truetype"), url("../fonts/icomoon/icomoon-bronze.woff?wgeulr") format("woff"), url("../fonts/icomoon/icomoon-bronze.svg?wgeulr#icomoon-bronze") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
   font-family: "icomoon-white";
   src: url("../fonts/icomoon/icomoon-white.eot?wgeulr");
   src: url("../fonts/icomoon/icomoon-white.eot?wgeulr#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon-white.ttf?wgeulr") format("truetype"), url("../fonts/icomoon/icomoon-white.woff?wgeulr") format("woff"), url("../fonts/icomoon/icomoon-white.svg?wgeulr#icomoon-white") format("svg");
@@ -183,77 +175,65 @@ sup {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  font-family: "icomoon-white" !important;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.color-br {
-  font-family: "icomoon-bronze" !important;
-}
-
-.color-wh {
-  font-family: "icomoon-white" !important;
-}
-
-._icon-bench:before {
-  content: "\e900";
-  color: #d4c17f;
-  font-size: 50px;
-}
-
-._icon-bicycle:before {
-  content: "\e901";
-  color: #d4c17f;
-}
-
-._icon-building:before {
-  content: "\e902";
-  color: #d4c17f;
-}
-
-._icon-fountain:before {
-  content: "\e903";
-  color: #d4c17f;
-}
-
-._icon-mouse:before {
-  content: "\e904";
-  color: #d4c17f;
-}
-
-._icon-facebook:before {
+._icon-bench::before {
   content: "\e900";
   color: #fff;
 }
 
-._icon-instagram:before {
+._icon-bicycle::before {
   content: "\e901";
   color: #fff;
 }
 
-._icon-phone:before {
+._icon-building::before {
   content: "\e902";
   color: #fff;
 }
 
-._icon-label:before {
+._icon-facebook::before {
   content: "\e903";
   color: #fff;
 }
 
-._icon-vk:before {
+._icon-fountain::before {
   content: "\e904";
   color: #fff;
 }
 
-._icon-youtube:before {
+._icon-instagram::before {
   content: "\e905";
   color: #fff;
 }
 
-.house {
-  background-color: green;
+._icon-mouse::before {
+  content: "\e906";
+  color: inherit;
+}
+
+._icon-phone::before {
+  content: "\e907";
+  color: #fff;
+}
+
+._icon-label::before {
+  content: "\e908";
+  color: #fff;
+}
+
+._icon-vk::before {
+  content: "\e909";
+  color: #fff;
+}
+
+._icon-youtube::before {
+  content: "\e90a";
+  color: #fff;
 }
 
 body {
@@ -345,6 +325,14 @@ a:hover {
 
 .header__nav {
   margin-right: 2.5rem;
+}
+
+.header__title {
+  font-family: Playfair-display, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #d4c17f;
+  text-align: center;
 }
 
 nav {
