@@ -33,3 +33,19 @@
     color: $accent;
     text-align: center;
 }
+
+.title {
+    min-height: rems(262);
+    padding-top: rems(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._icon-mouse {
+    font-size: rems(40);
+}
+
+._icon-mouse:hover::before {
+    color: $white;
+}
