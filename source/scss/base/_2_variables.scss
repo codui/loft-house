@@ -31,20 +31,17 @@ $btn-main-f-size: 16; // Font size of main buttons
 
 // Icomoon fonts variables
 $icomoon-font-path: 'fonts/icomoon' !default;
-$icomoon-font-family-br: 'icomoon-bronze' !default;
-$icomoon-font-family-wh: 'icomoon-white' !default;
+$icomoon-font-family: 'icomoon-white' !default;
 
-// Bronze color
-$icon-bench: unquote('"\\e900"');
-$icon-bicycle: unquote('"\\e901"');
-$icon-building: unquote('"\\e902"');
-$icon-fountain: unquote('"\\e903"');
-$icon-mouse: unquote('"\\e904"');
-
-// White color
-$icon-facebook: unquote('"\\e900"');
-$icon-instagram: unquote('"\\e901"');
-$icon-phone: unquote('"\\e902"');
-$icon-label: unquote('"\\e903"');
-$icon-vk: unquote('"\\e904"');
-$icon-youtube: unquote('"\\e905"');
+// Icons
+$_icon-bench: unquote('"\\e900"');
+$_icon-bicycle: unquote('"\\e901"');
+$_icon-building: unquote('"\\e902"');
+$_icon-facebook: unquote('"\\e903"');
+$_icon-fountain: unquote('"\\e904"');
+$_icon-instagram: unquote('"\\e905"');
+$_icon-mouse: unquote('"\\e906"');
+$_icon-phone: unquote('"\\e907"');
+$_icon-label: unquote('"\\e908"');
+$_icon-vk: unquote('"\\e909"');
+$_icon-youtube: unquote('"\\e90a"');

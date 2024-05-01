@@ -27,9 +27,9 @@
     margin-right: rems(40);
 }
 
-// .header__title h1 {
-//     @include fontFam(Playfair-display, 700);
-//     font-size: rems(48);
-//     color: $accent;
-//     text-align: center;
-// }
+.header__title {
+    @include fontFam($font-accent, 700);
+    font-size: rems(48);
+    color: $accent;
+    text-align: center;
+}

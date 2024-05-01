@@ -10,7 +10,6 @@
 
 @include fontFace(Roboto, 300, Roboto-Light);
 
-
 // An example of how to connect fonts
 
 // .playfairDisplay {
@@ -31,39 +30,23 @@
 
 // Icomoon icon font
 @font-face {
-    font-family: '#{$icomoon-font-family-br}';
-    src: url('../#{$icomoon-font-path}/#{$icomoon-font-family-br}.eot?wgeulr');
-    src: url('../#{$icomoon-font-path}/#{$icomoon-font-family-br}.eot?wgeulr#iefix')
+    font-family: '#{$icomoon-font-family}';
+    src: url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wgeulr');
+    src: url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wgeulr#iefix')
             format('embedded-opentype'),
-        url('../#{$icomoon-font-path}/#{$icomoon-font-family-br}.ttf?wgeulr')
+        url('../#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wgeulr')
             format('truetype'),
-        url('../#{$icomoon-font-path}/#{$icomoon-font-family-br}.woff?wgeulr')
+        url('../#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wgeulr')
             format('woff'),
-        url('../#{$icomoon-font-path}/#{$icomoon-font-family-br}.svg?wgeulr##{$icomoon-font-family-br}')
+        url('../#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wgeulr##{$icomoon-font-family}')
             format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
 }
 
-@font-face {
-    font-family: '#{$icomoon-font-family-wh}';
-    src: url('../#{$icomoon-font-path}/#{$icomoon-font-family-wh}.eot?wgeulr');
-    src: url('../#{$icomoon-font-path}/#{$icomoon-font-family-wh}.eot?wgeulr#iefix')
-            format('embedded-opentype'),
-        url('../#{$icomoon-font-path}/#{$icomoon-font-family-wh}.ttf?wgeulr')
-            format('truetype'),
-        url('../#{$icomoon-font-path}/#{$icomoon-font-family-wh}.woff?wgeulr')
-            format('woff'),
-        url('../#{$icomoon-font-path}/#{$icomoon-font-family-wh}.svg?wgeulr##{$icomoon-font-family-wh}')
-            format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-[class^="_icon-"]::before, 
-[class*=" _icon-"]::before {
+[class^='_icon-']::before,
+[class*=' _icon-']::before {
     /* use !important to prevent issues with browser extensions that change fonts */
     speak: never;
     font-style: normal;
@@ -71,89 +54,64 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    font-family: '#{$icomoon-font-family}' !important;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.color-br {
-    font-family: '#{$icomoon-font-family-br}' !important;
+._icon-bench::before {
+    content: $_icon-bench;
+    color: #fff;
 }
 
-.color-wh {
-    font-family: '#{$icomoon-font-family-wh}' !important;
+._icon-bicycle::before {
+    content: $_icon-bicycle;
+    color: #fff;
 }
 
-._icon-bench {
-    &:before {
-        content: $icon-bench;
-        color: #d4c17f;
-        font-size: 50px;
-    }
-}
-._icon-bicycle {
-    &:before {
-        content: $icon-bicycle;
-        color: #d4c17f;
-    }
-}
-._icon-building {
-    &:before {
-        content: $icon-building;
-        color: #d4c17f;
-    }
-}
-._icon-fountain {
-    &:before {
-        content: $icon-fountain;
-        color: #d4c17f;
-    }
-}
-._icon-mouse {
-    &:before {
-        content: $icon-mouse;
-        color: #d4c17f;
-    }
+._icon-building::before {
+    content: $_icon-building;
+    color: #fff;
 }
 
-._icon-facebook {
-    &:before {
-        content: $icon-facebook;
-        color: #fff;
-    }
-}
-._icon-instagram {
-    &:before {
-        content: $icon-instagram;
-        color: #fff;
-    }
-}
-._icon-phone {
-    &:before {
-        content: $icon-phone;
-        color: #fff;
-    }
-}
-._icon-label {
-    &:before {
-        content: $icon-label;
-        color: #fff;
-    }
-}
-._icon-vk {
-    &:before {
-        content: $icon-vk;
-        color: #fff;
-    }
-}
-._icon-youtube {
-    &:before {
-        content: $icon-youtube;
-        color: #fff;
-    }
+._icon-facebook::before {
+    content: $_icon-facebook;
+    color: #fff;
 }
 
-.house {
-    background-color: green;
+._icon-fountain::before {
+    content: $_icon-fountain;
+    color: #fff;
+}
+
+._icon-instagram::before {
+    content: $_icon-instagram;
+    color: #fff;
+}
+
+._icon-mouse::before {
+    content: $_icon-mouse;
+    color: #fff;
+}
+
+._icon-phone::before {
+    content: $_icon-phone;
+    color: #fff;
+}
+
+._icon-label::before {
+    content: $_icon-label;
+    color: #fff;
+}
+
+._icon-vk::before {
+    content: $_icon-vk;
+    color: #fff;
+}
+
+._icon-youtube::before {
+    content: $_icon-youtube;
+    color: #fff;
 }
