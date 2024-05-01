@@ -328,9 +328,6 @@ a:hover {
 }
 
 .header__title {
-  font-family: Playfair-display, sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
   color: #d4c17f;
   text-align: center;
 }
@@ -348,6 +345,9 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: Playfair-display, serif;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 ._icon-mouse {
