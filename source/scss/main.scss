@@ -3,22 +3,22 @@
 
 @use "sass:math";
 
-@import "./base/reset";
+@import "./base/1_reset"; // 1 
 // In the variables file, you need to set (without specifying units of measurement) 
 // the dimensions of the content part of the page in $content-width.
 // The main dimensions of the site elements will be calculated from this number.
-@import "./base/variables";
+@import "./base/2_variables"; // 2 
 
 // Functions for calculating units of measurement
-@import "./base/functions";
+@import "./base/3_functions"; // 3
 
 // All calculations of element sizes are made here.
-@import "./base/mixins";
+@import "./base/4_mixins"; // 4
 
 // Font connection file
-@import "./base/fonts";
+@import "./base/5_fonts"; // 5
 
-@import "./base/base";
+@import "./base/6_base"; // 6
 
 
 // Blocks
