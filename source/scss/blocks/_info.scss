@@ -1,0 +1,30 @@
+.info {
+    @include fontFam(raleway, 400);
+    font-size: rems(18);
+    position: relative;
+
+    &__link-address, &__link-phone {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__link-address {
+        transform: translate(104%, -90%);
+    }
+
+    &__link-phone {
+        transform: translate(33%, -94%);
+        left: 50%;
+    }
+
+    &__icon-label {
+        font-size: rems(21);
+        padding-right: rems(10);
+    }
+
+    &__icon-phone {
+        font-size: rems(21);
+        padding-right: rems(10);
+    }
+}

@@ -1,0 +1,12 @@
+.title {
+    min-height: rems(249);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include fontFam($font-accent, 700, serif);
+    font-size: rems(48);
+}
+
+.title__main {
+    margin-top: rems(-7);
+}
