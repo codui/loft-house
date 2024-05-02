@@ -349,11 +349,13 @@ a:hover {
   font-size: 3rem;
 }
 
-._icon-mouse {
+.header__title-icon:before {
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
   font-size: 2.5rem;
 }
 
-._icon-mouse:hover::before {
+.header__title-icon:hover::before {
   color: #ffffff;
 }
 

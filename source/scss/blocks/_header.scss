@@ -42,10 +42,11 @@
     font-size: rems(48);
 }
 
-._icon-mouse {
+.header__title-icon:before {
+    transition: color 0.2s ease-in;
     font-size: rems(40);
 }
 
-._icon-mouse:hover::before {
+.header__title-icon:hover::before {
     color: $white;
 }
