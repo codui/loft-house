@@ -374,7 +374,13 @@ nav {
 }
 
 .title__main {
-  margin-top: -0.4375rem;
+  margin-top: 0.375rem;
+}
+
+.title__link {
+  -webkit-transform: translate(0.7%, 16%);
+      -ms-transform: translate(0.7%, 16%);
+          transform: translate(0.7%, 16%);
 }
 
 .info {
@@ -382,28 +388,29 @@ nav {
   font-weight: 400;
   font-size: 1.125rem;
   position: relative;
+  -webkit-transform: translate(23.4%, 10%);
+      -ms-transform: translate(23.4%, 10%);
+          transform: translate(23.4%, 10%);
 }
-.info__link-address, .info__link-phone {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.info__link-address {
-  -webkit-transform: translate(104%, -90%);
-      -ms-transform: translate(104%, -90%);
-          transform: translate(104%, -90%);
+.info__link-address:hover .info__icon-label::before, 
+.info__link-phone:hover .info__icon-phone::before {
+  color: #d4c17f;
 }
 .info__link-phone {
-  -webkit-transform: translate(33%, -94%);
-      -ms-transform: translate(33%, -94%);
-          transform: translate(33%, -94%);
-  left: 50%;
+  -webkit-transform: translate(58%, -1%);
+      -ms-transform: translate(58%, -1%);
+          transform: translate(58%, -1%);
+}
+.info__icon-label, .info__icon-phone {
+  font-size: 1.3125rem;
+}
+.info__icon-label::before, .info__icon-phone::before {
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 .info__icon-label {
-  font-size: 1.3125rem;
-  padding-right: 0.625rem;
+  margin-right: 0.5625rem;
 }
 .info__icon-phone {
-  font-size: 1.3125rem;
-  padding-right: 0.625rem;
+  margin-right: 0.625rem;
 }/*# sourceMappingURL=main.css.map */
