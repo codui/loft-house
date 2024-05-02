@@ -384,6 +384,9 @@ nav {
 }
 
 .info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: raleway, sans-serif;
   font-weight: 400;
   font-size: 1.125rem;

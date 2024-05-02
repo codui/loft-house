@@ -384,6 +384,9 @@ nav {
 }
 
 .info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: raleway, sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
@@ -392,8 +395,7 @@ nav {
       -ms-transform: translate(23.4%, 10%);
           transform: translate(23.4%, 10%);
 }
-.info__link-address:hover .info__icon-label::before, 
-.info__link-phone:hover .info__icon-phone::before {
+.info__link-address:hover .info__icon-label::before, .info__link-phone:hover .info__icon-phone::before {
   color: #d4c17f;
 }
 .info__link-phone {

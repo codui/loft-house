@@ -1,4 +1,5 @@
 .info {
+    width: fit-content;
     @include fontFam(raleway, 400);
     font-size: rems(18);
     position: relative;
