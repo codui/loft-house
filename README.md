@@ -9,4 +9,4 @@
 <h1>
   <a href="https://codui.github.io/loft-house/" target="_blank">LoftHouse</a>
 </h1>
-![](images/loftHouse.png)
+![](docs/images/loftHouse.png)
