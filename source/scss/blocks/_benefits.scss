@@ -1,0 +1,25 @@
+.benefints {
+
+}
+
+.benfits__row {
+    display: flex;
+    max-width: rems(794);
+    margin: 0 auto;
+}
+
+.benefits__item {
+    text-align: center;
+
+    &-img {
+        margin-bottom: rems(53);
+    }
+
+    &-text {
+        @include fontFam($font-secondary, 300);
+        line-height: 1.35;
+        font-size: rems(20);
+    }
+}
+
+
