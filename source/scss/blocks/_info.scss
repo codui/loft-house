@@ -1,16 +1,14 @@
 .info {
+    display: flex;
+    column-gap: rems(104);
     width: fit-content;
     @include fontFam(raleway, 400);
     font-size: rems(18);
-    position: relative;
-    transform: translate(23.4%, 10%);
+    transform: translate(50%, 10%);
     
     &__link-address:hover .info__icon-label::before,
     &__link-phone:hover .info__icon-phone::before {
         color: $accent;
-    }
-    &__link-phone {
-        transform: translate(58%, -1%);
     }
 
     &__icon-label,
