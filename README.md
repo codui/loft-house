@@ -9,4 +9,6 @@
 <h1>
   <a href="https://codui.github.io/loft-house/" target="_blank">LoftHouse</a>
 </h1>
-<img src="docs/images/loftHouse.png" alt="loft house">
+<a href="https://codui.github.io/loft-house/" target="_blank">
+  <img src="docs/images/loftHouse.png" alt="loft house">
+</a>
