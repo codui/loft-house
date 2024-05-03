@@ -31,3 +31,8 @@
     font-size: rems($btn-main-f-size);
     @include fontFam(Playfair-display, 700);
 }
+
+
+@mixin animaMouse($nameAnimation) {
+    animation: $nameAnimation 0.8s ease-in-out infinite both;
+}

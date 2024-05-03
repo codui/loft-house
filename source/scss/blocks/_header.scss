@@ -8,12 +8,12 @@
     padding-bottom: rems(74);
 
     background: linear-gradient(
-        180deg,
-        $dark 11.98%,
-        rgba($dark, 0.3) 51.04%,
-        #242b33 92.19%
-    ),
-    url('./../images/header/header-bg.jpg');
+            180deg,
+            $dark 11.98%,
+            rgba($dark, 0.3) 51.04%,
+            #242b33 92.19%
+        ),
+        url('./../images/header/header-bg.jpg');
 }
 
 .header__top-row {
@@ -32,9 +32,16 @@
     text-align: center;
 }
 
-.header__title-icon:before {
-    transition: color 0.2s ease-in;
-    font-size: rems(40);
+.header__title-icon {
+    position: absolute;
+    top: rems(-50);
+    left: 48%;
+    @include animaMouse(upDownMouse);
+    
+    &:before {
+        transition: color 0.2s ease-in;
+        font-size: rems(40);
+    }
 }
 
 .header__title-icon:hover::before {

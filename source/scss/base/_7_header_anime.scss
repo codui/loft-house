@@ -1,0 +1,11 @@
+@keyframes upDownMouse {
+    0% {
+        top: rems(-50);
+    }
+    // 50% {
+    //     top: rems(-45);
+    // }
+    100% {
+        top: rems(-45);
+    }
+}

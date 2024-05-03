@@ -304,6 +304,23 @@ a:hover {
   font-weight: 700;
 }
 
+@-webkit-keyframes upDownMouse {
+  0% {
+    top: -3.125rem;
+  }
+  100% {
+    top: -2.8125rem;
+  }
+}
+
+@keyframes upDownMouse {
+  0% {
+    top: -3.125rem;
+  }
+  100% {
+    top: -2.8125rem;
+  }
+}
 .header {
   min-height: 52.5rem;
   display: -webkit-box;
@@ -344,6 +361,13 @@ a:hover {
   text-align: center;
 }
 
+.header__title-icon {
+  position: absolute;
+  top: -3.125rem;
+  left: 48%;
+  -webkit-animation: upDownMouse 0.8s ease-in-out infinite both;
+          animation: upDownMouse 0.8s ease-in-out infinite both;
+}
 .header__title-icon:before {
   -webkit-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
@@ -390,6 +414,7 @@ nav {
 }
 
 .title__link {
+  position: relative;
   -webkit-transform: translate(0.7%, 16%);
       -ms-transform: translate(0.7%, 16%);
           transform: translate(0.7%, 16%);
